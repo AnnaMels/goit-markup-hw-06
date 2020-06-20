@@ -266,47 +266,66 @@
                             <p class="mailing">
                             <label for="email"></label>
                             <input type="email" name="email" id="email" placeholder="E-mail"/>
-                            <button class="subscribe" type="submit">Подписаться <svg class="subscribe-icon" width="13" height="13"><use href="./image/send-icon.svg"></use></svg> </button>
+                            <button class="subscribe" type="submit">
+                                <span>Подписаться</span>
+                                <svg class="subscribe-icon" width="24" height="24">
+                                    <use href="./image/symbol-defs.svg#send"></use>
+                                </svg>
+                            </button>
                         </p>
                         
                         </form>
 
                     </div>
                 </div>
-                <p class="copy">2020 | Developed by GoIT Students </p>
+               
             </div>
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
                 <form> 
-                    <button data-close-modal class="close-modal-button"><svg  viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black"/>
-                        </svg></button>
+                    <button data-modal-close type="button" class="close-btn">
+                        <svg class="close-modal-button" width="11" height="11"><use href="./image/symbol-defs.svg#button"></use></svg>
+                    </button>
 
                     <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                     <p class="form-field">
                     
-                    <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
-                    <label class="form-label" for="name"><svg class="name-icon" href="./image/name.svg" width="30" height="30"></svg>Имя</label>
-                    
+                        <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
+                        <label class="form-label" for="name">Имя</label>
+                        <svg class="name-icon" width="12" height="12">
+                            <use href="./image/symbol-defs.svg#name"></use>
+                        </svg>
                     </p>
+
+
                 <p class="form-field">
                     <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
                     <label class="form-label" for="tel">Телефон</label>
+                    <svg class="tel-icon" width="13" height="13">
+                        <use href="./image/symbol-defs.svg#tel"></use>
+                    </svg>
+                    
                 </p>
                 <p class="form-field">
                     <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
                     <label class="form-label" for="mail">Почта</label>
+                    <svg class="mail-icon" width="15" height="12">
+                        <use href="./image/symbol-defs.svg#mail"></use>
+                    </svg>
                     </p>
                     
                     <p class="form-field">
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment"></textarea>
+                    <textarea  class="comment" name="comment" id="comment" placeholder=" "></textarea>
+                    <label class="comment-label" for="comment">Комментарий</label>
+                    
+                    
                     </p>
 
-                    <p class="form-field">
-                        <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                        <label for="agreement">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></label>
-                        </p>
+                    <p class="form-field check">
+                        <input class="checkbox" type="checkbox" name="agreement" value="agreement" id="agreement">
+                        <label class="checkbox-label" for="agreement">Соглашаюсь с рассылкой и принимаю <a> Условия договора </a></label>
+                    </p>
+
                     <button type="submit" class="button">Отправить</button>
                     </form>
                 </div>

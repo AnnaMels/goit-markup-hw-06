@@ -161,10 +161,23 @@
                         </ul>
                     </div>
                     <div class="third-div">
-                        <p class="form">Подписаться на рассылку</p>
+                        <form>
+                            <b class="subscription">Подпишитесь на рассылку</b>
+                            <p class="mailing">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="E-mail"/>
+                            <button class="subscribe" type="submit">
+                                <span>Подписаться</span>
+                                <svg class="subscribe-icon" width="24" height="24">
+                                    <use href="./image/symbol-defs.svg#send"></use>
+                                </svg>
+                            </button>
+                        </p>
+                        
+                        </form>
+
                     </div>
                 </div>
-                <p class="copy">2020 | Developed by GoIT Students </p>
             </div>
         </footer>
 </body>
