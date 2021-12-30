@@ -782,12 +782,25 @@ img {
 }
 
 .modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
   border-color: var(--accent-color);
 }
 
-.form-field:hover .modal-input-icon,
-.form-field:focus .modal-input-icon {
+.form-field:hover .modal-input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-form-input:focus-visible + .modal-input-icon,
+.form-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
 
@@ -810,6 +823,7 @@ textarea {
   margin-top: 4px;
   padding: 12px 16px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .modal-textarea::placeholder {
@@ -849,13 +863,6 @@ textarea {
   cursor: pointer;
 }
 
-.modal-input-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transition: fill 250ms var(--timing-function);
-}
-
 .modal-checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -867,6 +874,7 @@ textarea {
   background-color: transparent;
   border: 2px solid #212121;
   border-radius: 2px;
+  vertical-align: middle;
   transition: background-color 250ms var(--timing-function),
     border 250ms var(--timing-function);
 }
